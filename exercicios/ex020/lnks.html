@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        #  = id
+        .  = classe
+        :  = pseudo-classe
+        :: = pseudo-element
+        >  = children
+        */
+       
+        /*a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+        */
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .especial {
+            background-color: red;
+            color: aliceblue;
+        }
+        
+        a:hover{
+            color: blue;
+            font-weight: bold;
+            font-size: 110%;
+            background-color: bisque;
+        }
+        h2{
+            border-color: black;
+            margin: 10px;
+            outline: 1PX;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <h2>TESTE DE BORDA</h2>
+    <ul>
+        <a href="https://www.ramopet.com.br" target="_blank"><li class="especial">Portal Ramo Pet</li></a>
+        <a href="https://www.fullsellers.com.br" target="_blank" ><li>Full Sellers</li></a>
+        <a href="https://www.amigospetbrasil.com.br" target="_blank"><li>Amigos Pet Brasil</li></a>
+    </ul>
+    
+    
+</body>
+</html>

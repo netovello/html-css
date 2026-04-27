@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 730px)" srcset="imagens/imagem-p.webp"
+        type="image/webp">
+        <source media="(max-width:1050px)" srcset="imagens/imagem-m.webp" type="image/webp">
+        <img src="imagens/imagem-g.webp" alt="foto grande">
+    </picture>
+    <h1>Vamos aprender a reproduzir um audio</h1>
+    <audio src="midia/03 - O QUE É O QU É.mp3" controls autoplay></audio>
+    <audio preload="metadata" controls loop>
+        <source src="midia/10 - NUVEM DE LÁGRIMAS.mp3" type="audio/mpeg">
+        <!--Voce pode colocar mais audios de formato diferentes para que o navegador vá tentando reproduzir, caso ele não seja compativel-->
+        <p>O seu navegador não tem compatibilidade com os arquivos de audio, baixe o arquivo cliecando <a href="midia/10 - NUVEM DE LÁGRIMAS.mp3">aqui</a></p>
+    </audio>
+</body>
+</html>
