@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 350px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            background-color: rgb(241, 205, 0);
+            color: black;
+            font-weight: bold;
+            font-size: 1.3em;
+            padding: 10px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        thead{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody >tr:nth-child(odd){
+            background-color: rgb(250, 250, 250);
+
+        }
+
+        tbody >tr:nth-child(even){
+            background-color: rgb(192, 192, 192);
+
+        }
+
+        tfoot{
+            background-color: gray;
+            color: white;
+            
+        }
+
+        td.num{
+            text-align: center;
+        }
+        th.populacao{
+            width: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+
+    <!--Anatomia para tabelas grandes
+    
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+            TBODY
+            TR, TD, TH
+            TFOOT
+            TR, TD, TH
+            
+    -->
+    <table>
+        <caption>POPULAÇÃO DAS UNIDADES FEDERATIVAS</caption>
+
+        <thead>
+            
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" class="populacao">População</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num" class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+
+            <tr>
+                <td>Parana</td>
+                <td class="num">11 433 957</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 299</td>
+            </tr>
+
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+
+             <tr>
+                <td>Ceara</td>
+                <td class="num">9 132 078</td>
+            </tr>
+
+             <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 164 788</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num" class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+
+            <tr>
+                <td>Parana</td>
+                <td class="num">11 433 957</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 377 299</td>
+            </tr>
+
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+
+             <tr>
+                <td>Ceara</td>
+                <td class="num">9 132 078</td>
+            </tr>
+
+             <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 164 788</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>210.147.125</strong></td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda nemo maxime animi, ea, tempore molestias sequi sit accusantium deleniti tempora facilis nostrum quia. Tenetur officiis ullam exercitationem quis dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit veniam doloribus, aliquam, iusto velit voluptatem animi suscipit error doloremque temporibus. Earum pariatur repudiandae illum, aperiam asperiores hic nam est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ex quaerat, rem laudantium cupiditate velit vero expedita delectus consequuntur illo iste quia quasi? Quaerat qui, voluptates nostrum error repellendus sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cupiditate tempore, asperiores vero iste aspernatur recusandae nostrum dicta aliquid nemo nobis. Fuga, totam debitis similique impedit sint tenetur ea laboriosam.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda nemo maxime animi, ea, tempore molestias sequi sit accusantium deleniti tempora facilis nostrum quia. Tenetur officiis ullam exercitationem quis dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit veniam doloribus, aliquam, iusto velit voluptatem animi suscipit error doloremque temporibus. Earum pariatur repudiandae illum, aperiam asperiores hic nam est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ex quaerat, rem laudantium cupiditate velit vero expedita delectus consequuntur illo iste quia quasi? Quaerat qui, voluptates nostrum error repellendus sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cupiditate tempore, asperiores vero iste aspernatur recusandae nostrum dicta aliquid nemo nobis. Fuga, totam debitis similique impedit sint tenetur ea laboriosam.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda nemo maxime animi, ea, tempore molestias sequi sit accusantium deleniti tempora facilis nostrum quia. Tenetur officiis ullam exercitationem quis dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit veniam doloribus, aliquam, iusto velit voluptatem animi suscipit error doloremque temporibus. Earum pariatur repudiandae illum, aperiam asperiores hic nam est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ex quaerat, rem laudantium cupiditate velit vero expedita delectus consequuntur illo iste quia quasi? Quaerat qui, voluptates nostrum error repellendus sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cupiditate tempore, asperiores vero iste aspernatur recusandae nostrum dicta aliquid nemo nobis. Fuga, totam debitis similique impedit sint tenetur ea laboriosam.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda nemo maxime animi, ea, tempore molestias sequi sit accusantium deleniti tempora facilis nostrum quia. Tenetur officiis ullam exercitationem quis dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit veniam doloribus, aliquam, iusto velit voluptatem animi suscipit error doloremque temporibus. Earum pariatur repudiandae illum, aperiam asperiores hic nam est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ex quaerat, rem laudantium cupiditate velit vero expedita delectus consequuntur illo iste quia quasi? Quaerat qui, voluptates nostrum error repellendus sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cupiditate tempore, asperiores vero iste aspernatur recusandae nostrum dicta aliquid nemo nobis. Fuga, totam debitis similique impedit sint tenetur ea laboriosam.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda nemo maxime animi, ea, tempore molestias sequi sit accusantium deleniti tempora facilis nostrum quia. Tenetur officiis ullam exercitationem quis dolores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit veniam doloribus, aliquam, iusto velit voluptatem animi suscipit error doloremque temporibus. Earum pariatur repudiandae illum, aperiam asperiores hic nam est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ex quaerat, rem laudantium cupiditate velit vero expedita delectus consequuntur illo iste quia quasi? Quaerat qui, voluptates nostrum error repellendus sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cupiditate tempore, asperiores vero iste aspernatur recusandae nostrum dicta aliquid nemo nobis. Fuga, totam debitis similique impedit sint tenetur ea laboriosam.</p>
+
+</body>
+</html>
