@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ebebeb;
+                    }
+        fieldset{
+            background-color: white;
+            border-radius: 15px;
+            margin: 10px;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Qual o seu Sexo</legend>
+            <input type="radio" name="sexo" id="isexomas" ><label for="isexomas">Masculino</label>
+            <input type="radio" name="sexo" id="isexofem"> <label for="isexofem">Feminino</label>
+
+        </fieldset>
+
+        <fieldset>
+            <h1>Estado</h1>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+                <option value="" selected>--- Selecione ---</option>
+                <optgroup label="Região 01">
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="SP" selected >São Paulo (SP)</option>
+                    <option value="AC">Acre (AC)</option>
+                    <option value="AL">Alagoas (AL)</option>
+                    <option value="AP">Amapá (AP)</option>
+                    <option value="AM">Amazonas (AM)</option>
+                    <option value="BA">Bahia (BA)</option>
+                </optgroup>
+                <optgroup label="Regiões 02">
+                    <option value="CE">Ceará (CE)</option>
+                    <option value="ES">Espírito Santo (ES)</option>
+                    <option value="GO">Goiás (GO)</option>
+                    <option value="MA">Maranhão (MA)</option>
+                    <option value="MT">Mato Grosso (MT)</option>
+                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tenis</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+
+            <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option>Administração</option>
+                <option>Publicitário</option>
+                <option>Advogado</option>
+                <option>Enfermeira</option>
+            </datalist>
+            </p>   
+            
+            <p>
+                <label for="msg">Mensagem</label>
+                <textarea name="msg" id="imsg" cols="50" role="10"></textarea>
+            </p>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required maxlength="20" minlength="5" placeholder="Seu nome">
+            </p>
+            
+            <p><label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" placeholder="Seu Email">
+            </p>
+            <p>
+                <label for="icel">WhatsApp</label>
+                <input type="tel" name="cel" id="icel"
+                pattern="^+[0-9]{2} [0-9]{2} [0-9]{1} [0-9]{4}-[0-9]{4}$" required value="+xx xx x xxxx-xxxx">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados da Empresa</legend>
+            <p>
+                <label for="inomeempresa">Nome da Empresa</label>
+                <input type="text" name="nomedaempresa" id="inomedaempresa">
+            </p>
+        
+            <p>
+                <label for="icnpj">CNPJ</label>
+                <input type="number" required placeholder="XX.XXX.XXX/XXXX-XX" maxlength="18">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Outras escolhas</legend>
+            
+            <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+            
+            <p>
+                <label for="inivel">Nivel de Satisfação</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="2" >
+            </p>
+            <p>
+                OBS Quando você requisitar um input de arquivo o tipo do formulário de ve ser post
+            </p>
+
+            <p>
+                <label for="ifoto">Foto de Perfil</label>
+                <input type="file" name="foto" id="ifoto">
+                <!-- quando você requisitar um input de arquivo o tipo do formulário de ve ser post-->
+            </p>
+
+        </fieldset>
+        
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>
