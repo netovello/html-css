@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body{
+    background-color:beige;
+}
+
+header, header >nav{
+    flex-flow: column nowrap;
+    
+}
+
+header >h1{
+    flex-basis: 15px;
+}
+
+header >nav{
+    width: 90vw;
+    
+}
+
+main{
+   width: 90vw;
+}
+
+div.menurede{
+    flex-flow: column-reverse nowrap;
+}
