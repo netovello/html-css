@@ -1,0 +1,34 @@
+@charset"UTF-8";
+
+.container{
+    height: 600px;
+    background-color: gray;
+    display: grid;
+    grid-template: repeat(7,1fr) / repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+    
+
+}
+.topo{
+background-color: antiquewhite;
+grid-area: 1/1/2/5;
+}
+
+.menu{
+background-color:aqua ;
+grid-area: 2/1/2/5;
+}
+
+.principal{
+background-color: bisque;
+grid-area: 3/1/7/4;
+}
+.secundario{
+background-color:blueviolet ;
+grid-area:3/4/7/4 ;
+}
+.rodape{
+background-color:brown ;
+grid-area: 7/1/8/5;
+}
